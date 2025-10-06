@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://png.pngtree.com/back_origin_pic/04/20/76/103f61cbc227c79dde83a0c08b6d94b6.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        
+        } div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(92, 89, 85);
+            height: 80vh;
+            width: 40vw;
+            border-radius: 10%;
+            box-shadow: 10px 10px 15px rgb(255, 255, 255);
+        
+        } label{
+            color: aliceblue;
+            font-style: oblique;
+            text-decoration: solid;
+        } input{
+            border-radius: 10%;
+            border-color: aliceblue;
+            box-shadow: -5px 5px 20px gray;
+            margin-bottom: 15px;
+            border-bottom-style: hidden;
+            font-size: 15px;
+        } button:hover{
+            background-color: rgb(127, 125, 125);
+        } h1{
+            color: aliceblue;
+            text-align: center; 
+            margin: 15px;
+            font-size: 40px;
+        } #form{
+            width: 33.33%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Formulário de conta</h1>
+    <form action="#" method="post" id="form">
+        
+        <label for="Nome">Nome</label> <br>     
+        <input type="text" id="Nome" name="Nome" required minlength="2" maxlength="30" placeholder="minímo de 2 caracteres"> <br>
+
+        <label for="endereço">Endereço</label> <br>
+        <input type="text" id="endereço" name="endereço" placeholder="Digite seu endereço" > <br>
+
+        <label for="telefone">Telefone</label> <br>
+        <input type="number" id="telefone" name="telefone" placeholder="Digite seu telefone" > <br>
+
+        <label for="idade">idade</label> <br>
+        <input type="number" id="idade" name="idade" required minlength="15" placeholder="mínimo de 15 anos"><br>
+
+        <input type="submit" value="submit">
+
+    </form>
+    </div>
+</body>
+        <script>
+            
+        </script>
+</html>
