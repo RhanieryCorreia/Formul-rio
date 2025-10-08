@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Conta</title>
+    <style>
+        body {
+            background-image: url("https://png.pngtree.com/back_origin_pic/04/20/76/103f61cbc227c79dde83a0c08b6d94b6.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(92, 89, 85, 0.95);
+            height: 80vh;
+            width: 33.33%;
+            border-radius: 15px;
+            box-shadow: 10px 10px 15px rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        h1 {
+            color: aliceblue;
+            text-align: center; 
+            margin: 15px;
+            font-size: 40px;
+        }
+
+        label {
+            color: aliceblue;
+            font-style: oblique;
+            margin-bottom: 5px;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 1px solid aliceblue;
+            box-shadow: -5px 5px 20px gray;
+            margin-bottom: 15px;
+            font-size: 15px;
+            padding: 8px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: aliceblue;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(127, 125, 125);
+            color: white;
+        }
+
+        #form {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulário de Conta</h1>
+        <form action="#" method="post" id="form">
+            
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required minlength="2" maxlength="30" placeholder="mínimo de 2 caracteres">
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" required min="15" placeholder="mínimo de 15 anos">
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
+```
